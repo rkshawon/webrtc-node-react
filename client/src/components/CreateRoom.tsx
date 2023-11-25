@@ -8,7 +8,14 @@ function CreateButton() {
       console.log("user join room");
     });
   };
-  return <button onClick={createRoom}> start new meeting</button>;
+  return (
+    <button
+      className="bg-red-200 border border-green-200 p-2"
+      onClick={createRoom}
+    >
+      start new meeting
+    </button>
+  );
 }
 
 export default CreateButton;
